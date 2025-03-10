@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda de Macarena y Vicente</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+        .invitacion {
+            background: url('Portada.jpg') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .seccion {
+            padding: 50px;
+        }
+        iframe {
+            width: 80%;
+            height: 400px;
+            border: none;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input, select, textarea {
+            margin: 10px;
+            padding: 10px;
+            width: 80%;
+            max-width: 500px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .regalo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="invitacion"></div>
+    
+    <div class="seccion">
+        <h2>Ubicación</h2>
+        <iframe src="https://www.google.com/maps/embed?..." allowfullscreen></iframe>
+    </div>
+    
+    <div class="seccion">
+        <h2>Confirmar asistencia</h2>
+        <form>
+            <input type="email" placeholder="Correo electrónico" required>
+            <select required>
+                <option value="">¿Asistirás?</option>
+                <option value="sí">Sí</option>
+                <option value="no">No</option>
+            </select>
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="text" placeholder="Nombre completo de tu acompañante">
+            <textarea placeholder="Alergias e intolerancias"></textarea>
+            <select required>
+                <option value="">¿Usarás el autobús de ida?</option>
+                <option value="sí">Sí</option>
+                <option value="no">No</option>
+            </select>
+            <select required>
+                <option value="">¿Usarás el autobús de vuelta?</option>
+                <option value="sí">Sí</option>
+                <option value="no">No</option>
+            </select>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    
+    <div class="seccion regalo">
+        <h2>Regalo</h2>
+        <p>Número de cuenta: XXXX-XXXX-XXXX-XXXX</p>
+    </div>
+</body>
+</html>
